@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b6038cbd-a23f-41af-b726-3cad33550093" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/admin/src/main/java/io/kennen/shortlink/admin/service/impl/NextChatServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/io/kennen/shortlink/admin/service/impl/NextChatServiceImpl.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../../apache-maven-3.9.6" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="downloadAnnotationsAutomatically" value="true" />
+        <option name="downloadDocsAutomatically" value="true" />
+        <option name="downloadSourcesAutomatically" value="true" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2dPS7AdfbZpp7EhM8rve1rIPjFt" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/hkn/project_folder/KennenChat&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;show.run.dashboard.notification&quot;: &quot;false&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;21232f297a57a5a743894a0e4a801fc3&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
+  }
+}</component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\hkn\project_folder\shortlink\project\src\main\resources" />
+      <recent name="D:\hkn\project_folder\shortlink\project\src\main\java\io\kennen\shortlink\project\mq\consumer" />
+      <recent name="D:\hkn\project_folder\shortlink\admin\src\main\resources" />
+      <recent name="D:\hkn\project_folder\shortlink\project\src\main\java\io\kennen\shortlink\project\common\constants" />
+      <recent name="D:\hkn\project_folder\shortlink\project\src\main\java\io\kennen\shortlink\project\dto\resp" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="io.kennen.shortlink.project.initialize" />
+      <recent name="io.kennen.shortlink.project.mq.idempotent" />
+      <recent name="io.kennen.shortlink.project.mq.producer" />
+      <recent name="io.kennen.shortlink.admin.config" />
+      <recent name="io.kennen.shortlink.project.handler" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.NextChat">
+    <configuration name="NextChat" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="17" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="io.kennen.shortlink.admin.NextChatApplication" />
+      <module name="admin" />
+      <shortenClasspath name="ARGS_FILE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <shortenClasspath name="ARGS_FILE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NextChatApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="admin" />
+      <option name="SHORTEN_COMMAND_LINE" value="ARGS_FILE" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="io.kennen.shortlink.admin.NextChatApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="SHORTEN_COMMAND_LINE" value="ARGS_FILE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b6038cbd-a23f-41af-b726-3cad33550093" name="Changes" comment="" />
+      <created>1709908050338</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1709908050338</updated>
+      <workItem from="1709908051580" duration="2383000" />
+      <workItem from="1709954860896" duration="27875000" />
+      <workItem from="1710082835830" duration="1712000" />
+      <workItem from="1710129145742" duration="5342000" />
+      <workItem from="1710140764816" duration="8384000" />
+      <workItem from="1710154392907" duration="295000" />
+      <workItem from="1710154699917" duration="653000" />
+      <workItem from="1710155968570" duration="12361000" />
+      <workItem from="1710169223248" duration="929000" />
+      <workItem from="1710210783015" duration="32812000" />
+      <workItem from="1710312227438" duration="24738000" />
+      <workItem from="1710423572092" duration="5070000" />
+      <workItem from="1710471788764" duration="22954000" />
+      <workItem from="1710559911837" duration="16589000" />
+      <workItem from="1710653490201" duration="13474000" />
+      <workItem from="1710678615080" duration="5255000" />
+      <workItem from="1710856476781" duration="5243000" />
+      <workItem from="1710899795075" duration="2096000" />
+      <workItem from="1711074221924" duration="17080000" />
+      <workItem from="1711177212717" duration="15407000" />
+      <workItem from="1711266733809" duration="1473000" />
+      <workItem from="1711372497792" duration="681000" />
+      <workItem from="1711421152214" duration="15515000" />
+      <workItem from="1711539195383" duration="1442000" />
+      <workItem from="1711715154583" duration="1692000" />
+      <workItem from="1713350604055" duration="300000" />
+      <workItem from="1713363935634" duration="2021000" />
+      <workItem from="1713401386014" duration="576000" />
+      <workItem from="1713440960854" duration="9000" />
+      <workItem from="1724758636829" duration="1772000" />
+      <workItem from="1724760575437" duration="9307000" />
+      <workItem from="1724811884921" duration="721000" />
+      <workItem from="1724821485712" duration="16921000" />
+      <workItem from="1724984170615" duration="396000" />
+      <workItem from="1725083873457" duration="3990000" />
+      <workItem from="1725163272539" duration="4222000" />
+      <workItem from="1725180302244" duration="830000" />
+      <workItem from="1725194094432" duration="242000" />
+      <workItem from="1725194346341" duration="270000" />
+      <workItem from="1725194632804" duration="750000" />
+      <workItem from="1725195548689" duration="100000" />
+    </task>
+    <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-core" />
+    <option featureType="dependencySupport" implementationName="java:com.google.protobuf:protobuf-java" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.validation:jakarta.validation-api" />
+    <option featureType="dependencySupport" implementationName="java:io.reactivex.rxjava3:rxjava" />
+    <option featureType="dependencySupport" implementationName="java:io.projectreactor:reactor-core" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.data:spring-data-commons" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.cloud:spring-cloud-context" />
+    <option featureType="dependencySupport" implementationName="java:org.hibernate.validator:hibernate-validator" />
+    <option featureType="dependencySupport" implementationName="java:org.thymeleaf:thymeleaf" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-webmvc" />
+    <option featureType="dependencySupport" implementationName="java:org.projectlombok:lombok" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.springframework.beans.factory.BeanCreationException" package="org.springframework.beans.factory" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.net.UnknownHostException" package="java.net" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
