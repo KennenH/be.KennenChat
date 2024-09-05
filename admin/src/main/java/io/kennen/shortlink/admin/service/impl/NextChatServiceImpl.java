@@ -51,6 +51,7 @@ public class NextChatServiceImpl implements NextChatService {
         return JSONUtil.toBean(result, ChatCompletionResult.class);
     }
 
+
     private static final ChatBuilder builder = new Qianfan(AK, SK).chatCompletion().model("ERNIE-Speed-8K");
 
     private static final BlockingDeque<Runnable> workQueue = new LinkedBlockingDeque<>(100);

@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6038cbd-a23f-41af-b726-3cad33550093" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/admin/src/main/java/io/kennen/shortlink/admin/controller/NextChatController.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/io/kennen/shortlink/admin/controller/NextChatController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/src/main/java/io/kennen/shortlink/admin/service/impl/NextChatServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/io/kennen/shortlink/admin/service/impl/NextChatServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -176,6 +177,8 @@
       <workItem from="1725194346341" duration="270000" />
       <workItem from="1725194632804" duration="750000" />
       <workItem from="1725195548689" duration="100000" />
+      <workItem from="1725195814739" duration="251000" />
+      <workItem from="1725518934181" duration="3178000" />
     </task>
     <servers />
   </component>
