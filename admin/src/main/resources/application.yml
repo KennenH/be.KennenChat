@@ -1,2 +1,8 @@
 server:
   port: 8008
+spring:
+  datasource:
+    username: root
+    password: Hkn19858120611
+    url: jdbc:mysql://172.17.0.3:3306/link?characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&transformedBitIsBoolean=true&serverTimezone=GMT%2B8
+    driver-class-name: com.mysql.cj.jdbc.Driver

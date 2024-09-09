@@ -5,8 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6038cbd-a23f-41af-b726-3cad33550093" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/admin/src/main/java/io/kennen/shortlink/admin/dao/entity/VisitorDO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/main/java/io/kennen/shortlink/admin/dao/mapper/VisitorMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/src/main/java/io/kennen/shortlink/admin/toolkit/IPUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/java/io/kennen/shortlink/admin/NextChatApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/io/kennen/shortlink/admin/NextChatApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/src/main/java/io/kennen/shortlink/admin/controller/NextChatController.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/io/kennen/shortlink/admin/controller/NextChatController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/java/io/kennen/shortlink/admin/service/NextChatService.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/io/kennen/shortlink/admin/service/NextChatService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/src/main/java/io/kennen/shortlink/admin/service/impl/NextChatServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/java/io/kennen/shortlink/admin/service/impl/NextChatServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,11 +97,11 @@
       <recent name="D:\hkn\project_folder\shortlink\project\src\main\java\io\kennen\shortlink\project\dto\resp" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="io.kennen.shortlink.admin.dao.mapper" />
+      <recent name="io.kennen.shortlink.admin.dao.entity" />
       <recent name="io.kennen.shortlink.project.initialize" />
       <recent name="io.kennen.shortlink.project.mq.idempotent" />
       <recent name="io.kennen.shortlink.project.mq.producer" />
-      <recent name="io.kennen.shortlink.admin.config" />
-      <recent name="io.kennen.shortlink.project.handler" />
     </key>
   </component>
   <component name="RunManager" selected="Application.NextChat">
@@ -178,7 +186,8 @@
       <workItem from="1725194632804" duration="750000" />
       <workItem from="1725195548689" duration="100000" />
       <workItem from="1725195814739" duration="251000" />
-      <workItem from="1725518934181" duration="3178000" />
+      <workItem from="1725518934181" duration="3749000" />
+      <workItem from="1725802046835" duration="9573000" />
     </task>
     <servers />
   </component>

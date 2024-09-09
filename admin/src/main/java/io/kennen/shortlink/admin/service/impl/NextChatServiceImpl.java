@@ -4,12 +4,17 @@ import cn.hutool.json.JSONUtil;
 import com.baidubce.qianfan.Qianfan;
 import com.baidubce.qianfan.core.builder.ChatBuilder;
 import com.baidubce.qianfan.model.chat.Message;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.google.gson.Gson;
+import io.kennen.shortlink.admin.dao.entity.VisitorDO;
+import io.kennen.shortlink.admin.dao.mapper.VisitorMapper;
 import io.kennen.shortlink.admin.dto.req.CompletionBody;
 import io.kennen.shortlink.admin.dto.req.CompletionMessage;
 import io.kennen.shortlink.admin.dto.resp.ChatCompletionResult;
 import io.kennen.shortlink.admin.service.NextChatService;
+import io.kennen.shortlink.admin.toolkit.IPUtil;
 import jakarta.annotation.PreDestroy;
+import jakarta.servlet.http.HttpServletRequest;
 import lombok.RequiredArgsConstructor;
 import okhttp3.*;
 import org.json.JSONObject;
@@ -27,7 +32,7 @@ import java.util.concurrent.TimeUnit;
 @Service
 // 使用构造器注入方式注入userRegisterCachePenetrationBloomFilter，在Autowired或Resource的基础上对属性加一个final修饰即可
 @RequiredArgsConstructor
-public class NextChatServiceImpl implements NextChatService {
+public class NextChatServiceImpl extends ServiceImpl<VisitorMapper, VisitorDO> implements NextChatService {
 
     static final OkHttpClient HTTP_CLIENT = new OkHttpClient()
             .newBuilder()
@@ -69,7 +74,18 @@ public class NextChatServiceImpl implements NextChatService {
     }
 
     @Override
-    public ResponseBodyEmitter chatCompletionStream(CompletionBody body) {
+    public ResponseBodyEmitter chatCompletionStream(CompletionBody body, HttpServletRequest request) {
+        try {
+            String clientIp = IPUtil.getClientIp(request);
+            VisitorDO visitorDO = VisitorDO.builder()
+                    .ip(clientIp)
+                    .gitVisits(0)
+                    .sendMessages(1)
+                    .build();
+            baseMapper.insertOrUpdateOnMessage(visitorDO);
+        } catch (Exception ignored) {
+        }
+
         List<CompletionMessage> prompts = body.getMessages();
         ResponseBodyEmitter emitter = new ResponseBodyEmitter();
         threadPool.submit(() -> {
@@ -96,6 +112,22 @@ public class NextChatServiceImpl implements NextChatService {
             }
         });
         return emitter;
+    }
+
+    @Override
+    public void eventTrack(HttpServletRequest request) {
+        String clientIp = IPUtil.getClientIp(request);
+        VisitorDO visitorDO = VisitorDO.builder()
+                .ip(clientIp)
+                .gitVisits(1)
+                .sendMessages(0)
+                .build();
+        baseMapper.insertOrUpdateOnClickGithub(visitorDO);
+    }
+
+    @Override
+    public List<VisitorDO> getAllTrack() {
+        return baseMapper.selectAll();
     }
 
     /**

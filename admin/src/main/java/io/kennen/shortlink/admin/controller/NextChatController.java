@@ -2,15 +2,14 @@ package io.kennen.shortlink.admin.controller;
 
 import io.kennen.shortlink.admin.common.convention.result.Result;
 import io.kennen.shortlink.admin.common.convention.result.Results;
+import io.kennen.shortlink.admin.dao.entity.VisitorDO;
 import io.kennen.shortlink.admin.dto.req.CompletionBody;
 import io.kennen.shortlink.admin.dto.req.CompletionMessage;
 import io.kennen.shortlink.admin.dto.resp.ChatCompletionResult;
 import io.kennen.shortlink.admin.service.NextChatService;
+import jakarta.servlet.http.HttpServletRequest;
 import lombok.RequiredArgsConstructor;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseBodyEmitter;
 
 import java.io.IOException;
@@ -57,7 +56,20 @@ public class NextChatController {
      * 流式响应对话
      */
     @PostMapping("/api/next-chat/completion/stream")
-    public ResponseBodyEmitter completionStream(@RequestBody CompletionBody body) {
-        return nextChatService.chatCompletionStream(body);
+    public ResponseBodyEmitter completionStream(@RequestBody CompletionBody body, HttpServletRequest request) {
+        return nextChatService.chatCompletionStream(body, request);
+    }
+
+    /**
+     * 点击 github 链接
+     */
+    @PostMapping("/api/next-chat/tracking/github")
+    public void eventTracking(HttpServletRequest request) {
+        nextChatService.eventTrack(request);
+    }
+
+    @GetMapping("/api/next-chat/tracking/get-kennen-chat-all-tracking-data")
+    public Result<List<VisitorDO>> getTracking() {
+        return Results.success(nextChatService.getAllTrack());
     }
 }
